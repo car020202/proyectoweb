@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>FineWatch</title>
+    <!-- Agregar enlaces a Bootstrap CSS y JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Agrega estilos CSS para el carrusel */
+      #relojCarousel {
+        max-height: 900px; /* Altura máxima deseada */
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var menuVisible = false;
+
+        // Función para alternar la visibilidad del menú
+        function toggleMenu() {
+          if (menuVisible) {
+            $("#menu").hide();
+          } else {
+            $("#menu").show();
+          }
+          menuVisible = !menuVisible;
+        }
+
+        // Abrir o cerrar el menú al hacer clic en el logotipo
+        $("#logo").click(function () {
+          toggleMenu();
+        });
+
+        // Mostrar una animación al hacer clic en el logotipo
+        $("#logo").hover(
+          function () {
+            $(this).animate(
+              {
+                width: "150px",
+                height: "150px",
+              },
+              500
+            );
+          },
+          function () {
+            $(this).animate(
+              {
+                width: "100px",
+                height: "100px",
+              },
+              500
+            );
+          }
+        );
+      });
+      
+
+     
+    </script>
+    <header>
+      
+        <img id="logo" src="/img/logo.jpg" alt="Logotipo de Relojería Online" />
+        <h1 className="nombre.empresa" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;">FineWatch</h1>
+        
+        
+        
+        <nav id="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Relojes</a></li>
+            <li><a href="login.html">tu cuenta</a></li>
+          </ul>
+        </nav>
+     
+    </header>
+    <main>
+      <section>
+        
+        <div id="relojCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#relojCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#relojCarousel" data-slide-to="1"></li>
+            <li data-target="#relojCarousel" data-slide-to="2"></li>
+          </ol>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="samsung.html">
+                <img src="/img/1366_521.jpeg" alt="Reloj 1" style="width: 100%; height: 100%;">
+              <h2 class="carousel-caption">Buscas tecnologia</h2>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="casio.html">
+                <img src="/img/reoj22.jpg" alt="Reloj 2" style="width: 100%; height: 100%;">
+              <h2 class="carousel-caption">Buscas durabilidad</h2>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="seiko.html">
+                <img src="/img/reloj33.jpg" alt="Reloj 3" style="width: 100%; height: 100%;">
+              <h2 class="carousel-caption">Buscas elegancia</h2>
+              </a>
+            </div>
+          </div>
+        
+          <a class="carousel-control-prev" href="#relojCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#relojCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        
+      </section>
+
+      <section>
+        <br>
+        <center><h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Nuestras Marcas</h1></center>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <a href="samsung.html">
+                  <img src="/img/marca1.png" class="card-img-top" alt="Marca 1">
+
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <a href="seiko.html" > <!-- "target='_blank'" abrirá la página en una nueva ventana o pestaña -->
+                  <img src="/img/marca2.png" class="card-img-top" alt="Marca 2">
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/casio-logo.png" class="card-img-top" alt="Marca 3">
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/tommy-hilfiger-1.png" class="card-img-top" alt="Marca 4">
+                  
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/cat-2.png" class="card-img-top" alt="Marca 5">
+                  
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/michael-kors-1.png" class="card-img-top" alt="Marca 6">
+                  
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/polo-1.png" class="card-img-top" alt="Marca 7">
+                  
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="/img/guess-1.png" class="card-img-top" alt="Marca 8">
+                  
+              </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <br>
+        
+        <br>
+        <div style="overflow: hidden; margin: 0 50px;">
+          <img id="bannerImage" src="/img/seccion3 casio.jpg" alt="Imagen de banner" style="width: 100%;">
+      </div>
+      </section>
+      <script>
+        $(document).ready(function () {
+            // Selecciona la imagen por su ID
+            var bannerImage = $("#bannerImage");
+    
+            // Agrega un manejador de clic a la imagen
+            bannerImage.click(function () {
+                // Realiza la animación de desvanecimiento
+                bannerImage.slideUp(100, function () {
+                    // Una vez completada la animación, redirige a otra página
+                    window.location.href = "casionew.html";
+                });
+            });
+        });
+    </script>
+
+
+      <section>
+        <br>
+        <center><h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Ofertas </h1></center>
+        <br>
+        <div class="container">
+          <div class="row" >
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/invicta pro diver.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">Invicta Pro Diver 28003 Blue Sport reloj deportivo azul rubor dial plata maquina suiza para hombre</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$229</span> <span style="color: rgb(0, 0, 0);">: $129</span>
+                </h4>
+                
+                
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/seikooferta.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">Seiko Presage Vintage Style 60’s Open Heart SSA426J1 reloj de nylon cafe casual para hombre</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$1500</span> <span style="color: rgb(0, 0, 0);">: $949</span>
+                </h4>
+                
+                
+              
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/michaelkorsbradshaw.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">Michael Kors Bradshaw MK6359 Rose Gold reloj para dama resistente hasta 100mts bajo el agua</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$400</span> <span style="color: rgb(0, 0, 0);">: $210</span>
+                </h4>
+                
+                
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/timyoferta.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">Tommy Hilfiger Zoey 1782407 Gold reloj color dorado acero Inoxidable estilo formal para dama</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$250</span> <span style="color: rgb(0, 0, 0);">: $159</span>
+                </h4>
+                
+                
+              
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/catdriveoferta.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">CAT Drive Date Analog Black Dial PW.141.11.121 reloj plateado formal de acero inoxidable para hombre</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$349</span> <span style="color: rgb(0, 0, 0);">: $199</span>
+                </h4>
+              
+              
+              </div>
+              
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/michael kors oferta mujer morado.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">Michael Kors Marfil MK5598 White and Golde reloj de poliuretano dial marfil casual formal para dama</h6>
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$400</span> <span style="color: rgb(0, 0, 0);">: $299</span>
+                </h4>
+              
+              
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/catwachet oa verde.jpeg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title"> CAT Watches OA.137.23.343 reloj de color verde hecho de resina deportivo resistente al agua para hombre </h6>
+                
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$299</span> <span style="color: rgb(0, 0, 0);">: $199</span>
+                </h4>
+              
+              
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card mb-3">
+                <div style="position: relative;">
+                  <span style="position: absolute; top: 10px; left: 10px; background: black; color: white; padding: 5px;">Oferta</span>
+                  <img src="/img/plo oferta.jpg" class="card-img-top" alt="Marca 1">
+                </div>
+                <br>
+                <h6 class="card-title">US Polo Assn USC40032AZ Gold reloj color dorado acero inoxidable formal casual para mujer </h6>
+                
+                <h4 class="card-title">
+                  <span style="text-decoration: line-through; color: rgb(150, 150, 150);">$80</span> <span style="color: rgb(0, 0, 0);">: $55</span>
+                </h4>
+              
+              
+              </div>
+            </div>
+          </div>
+        </div>
+            
+
+      </section>
+      <script>
+        /*esto agrega un efecto en las cards de ofertas*/
+        $(document).ready(function () {
+        });
+    </script>
+
+
+      
+      
+      
+    </main>
+    <footer class="footer " style="background-color: #333;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/img/logo.jpg" alt="Logotipo de la empresa" style="width: 100px;">
+            <p style="color: white;">© 2023 - FineWatch</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#" style="color: white;"><img src="/img/descarga.png" style="width: 50px;"> faceboock</a></li>
+              <li><a href="#" style="color: white;"><img src="/img/instsa.png" style="width: 50px;"> instagram</a></li>
+              <li><a href="#" style="color: white;"><img src="/img/what.png" style="width: 50px;"> whatsapp</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#" style="color: white;">Contacto</a></li>
+              <li><a href="#"style="color: white;">Aviso legal</a></li>
+              <li><a href="#"style="color: white;">Política de privacidad</a></li>
+              <li><a href="#"style="color: white;">Desarrollado por Carlos Yanez</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

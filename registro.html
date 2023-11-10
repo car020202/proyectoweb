@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="cl-icon/css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form action="" class="form">
+        <h1 class="title">Regístrate</h1>
+        <div class="inp">
+          <input type="text" name="username" id="username" class="input" placeholder="Usuario"/>
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="inp">
+          <input type="password" name="password" id="password" class="input" placeholder="Contraseña"/>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <button type="button" onclick="registrarUsuario()" class="submit">Registrarse</button>
+        <p class="footer">
+          ¿Ya tienes cuenta? <a href="login.html" class="link">Inicia Sesión</a>
+        </p>
+      </form>
+
+      <div></div>
+      <div class="banner">
+        <h1 class="wel_text">BIENVENIDO<br /></h1>
+      </div>
+    </div>
+
+    <script>
+      function registrarUsuario() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Validación simple del lado del cliente
+        if (username === "" || password === "") {
+          alert("Por favor, ingresa tanto el usuario como la contraseña.");
+          return;
+        }
+
+        // Puedes agregar lógica de registro adicional aquí
+
+        alert("Registro exitoso. Ahora puedes iniciar sesión.");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>
